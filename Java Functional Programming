@@ -1,0 +1,40 @@
+Functional Programming is a paradigm shift. Uses declarative code instead of loops. We focus on what's need to be done instead of how will it get done?!
+
+Using stream and reduce to compute the sum in a single line.
+
+import java.util.List;
+public class Main {
+    public static void main(String[] args) {
+        //print each element from a list on it's own line
+
+        List<Integer> ls = List.of(1,2,3,4,5,6,7,8,9);
+
+        ls.stream().reduce(0,Integer::sum); 
+
+    }
+}
+
+Core Concepts of functional Programming:
+
+1. Stream: A sequence of elements that support functional -style operations.
+Allows processing of data in a declarative way.
+
+2. Lambda Function: Anonymous function (doesn't have a name/return type)
+eg: course->course.toUpperCase() is a lambda function.
+
+3. Method Reference:
+A shorthand for calling a method.
+eg: System.out::println is a method ref: 
+or 
+x->System.out.println(x);
+
+
+ls.stream() creates a stream from the list of integers. 
+
+
+
+
+
+
+
+
